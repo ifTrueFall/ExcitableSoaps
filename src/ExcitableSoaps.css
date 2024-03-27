@@ -1,0 +1,160 @@
+* { box-sizing: border-box; }
+body { background-color: white;
+       color: #221811;
+	   font-family: Tahoma, Arial, sans-serif; 
+	   margin: 0;  
+}
+#wrapper { background-color: #0;
+		   padding: 0;
+}   
+header {
+	display: flex;
+    background-image: url(name.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 128px;
+    padding-left: 105px;		 
+	padding-top: 5px;
+	padding-bottom: 20px;
+	background-color: #f4f4f4;
+	padding: 10px 0;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+header a { text-decoration: none; }
+header a:link       { color: #231814; }
+header a:visited { color: #231814; }
+header a:hover     { color: white; }
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+	padding-top: 105px;
+	padding-left: 80px;
+}
+
+nav {
+	display: flex-right;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+nav a:link       { color: #FEF6C2; }
+nav a:visited { color: #D2B48C; }
+nav ul { display: flex;
+	   font-size: 1.25em;
+	   list-style-type: none;
+	   margin: 0;
+       padding: 0; }
+nav li { border-bottom: 1px solid #FEF6C2;
+       padding: .5em 1em;
+	   }
+nav a {
+	color: #333;
+	margin: 0 10px;
+}
+
+nav a:hover {
+	color: #ff0000;
+}
+
+.products {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
+}
+
+.product {
+	transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+	transform: scale(1.1);
+}
+
+.product img {
+	width: 200px;
+	height: 200px;
+}
+
+.description {
+	text-align: center;
+	border: 2px solid #8C3826
+}
+footer {
+	background-color: #333;
+	font-size: .60em;
+	font-style: italic;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	bottom: 0;
+	width: 100%;
+	border-top: 2px solid #8C3826;
+	margin-top: 10px;
+}
+
+.AboutUs-image img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.craftsStory {
+    display: flex;
+    align-items: center;
+}
+
+.craftsStory img {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.craftsStory .text {
+    flex: 1;
+}
+
+.craftsStory::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.faq-section {
+	background-color: gray;
+    clear: both;
+    padding: 20px;
+}
+.faq-section::after {
+    content: "";
+    display: table;
+    clear: both;
+	margin-bottom: 10px;
+}
+
+.craft-image {
+    float: left;
+    margin-right: 20px;
+	
+}
+
+.faq-content {
+    overflow: hidden;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.bottom-right-image {
+    float: right;
+}
+#mobile { display: inline; }
+#desktop { display: none; }
