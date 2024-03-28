@@ -42,7 +42,7 @@ nav {
 	vertical-align: middle;
 	margin-left: 20px;
 }
-nav a:link       { color: #FEF6C2; }
+nav a:link       { color: pink; }
 nav a:visited { color: #D2B48C; }
 nav ul { display: flex;
 	   font-size: 1.25em;
