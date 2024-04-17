@@ -36,10 +36,19 @@ header a:hover     { color: white; }
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
-	margin: auto;
-	padding: 50px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
 }
-
+.pGrid {
+	padding-left: 400px;
+	justify-content: center;
+	align-items: center;
+	width: 2000px;
+}
 .logo {
     flex: 1;
     display: flex;
@@ -81,10 +90,13 @@ nav a:hover {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 20px 0;
+	border: solid 2px black;
+	margin: 10px;
 }
 
 .product, .product2 {
 	transition: transform 0.3s ease-in-out;
+	margin-bottom: 20px;
 }
 
 .product:hover {
