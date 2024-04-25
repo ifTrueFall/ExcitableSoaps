@@ -1,86 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Excitable Soaps Products</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/ExcitableSoaps.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-27' y='75' font-family='Courier' font-size='117' fill='%23000'%3E🧼%3C/text%3E%3C/svg%3E" />
+	<script>
+		function changeImage(src) {
+			document.getElementById('main-image').src = src;
+			var productNumber = src.split('product')[1].split('.')[0];
+			document.getElementById('main-link').href = "Product" + productNumber + ".html";
+		}
+	
+		function handleClick(event) {
+			const buttons = document.querySelectorAll('button');
+			buttons.forEach(button => {
+				button.classList.remove('active');
+			});
+			event.target.classList.add('active');
+		}
+	</script>
+	
+	<title>Excitable Soaps Products</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="src/ExcitableSoaps.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml"
+		href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-27' y='75' font-family='Courier' font-size='117' fill='%23000'%3E🧼%3C/text%3E%3C/svg%3E" />
 	<meta name="description" content="Great and organic products, no animal fats used at all!
 	Contact us if you need a request or even a question. We're happy to chat about our products.">
 </head>
+
 <body>
 	<div id="wrapper">
-	<header>
-		<div class="logo">
-            <h1><a href="index.html">Excitable Soaps</a></h1>
-        </div>
-		<nav>
-			<ul>
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="FAQ.html">FAQ</a></li> 
-			  <li><a href="AboutUs.html">About Us</a></li>
-			  <li><a href="catalogue.html">Products</a></li>
-			  
-			</ul>
-		 </nav>
-	</header>
-		 <main>
+		<header>
+			<div class="logo">
+				<h1><a href="index.html">Excitable Soaps</a></h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="FAQ.html">FAQ</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="catalogue.html">Products</a></li>
+
+				</ul>
+			</nav>
+		</header>
 			<main>
 				<div class="slideshow-container">
-					<div class="slideshow">
-						<div><img src="src/product1.png" alt="Slide 1"></div>
-						<div><img src="src/product2.png" alt="Slide 2"></div>
-						<div><img src="src/product3.png" alt="Slide 3"></div>
-						<div><img src="src/product4.png" alt="Slide 4"></div>
-						<div><img src="src/product5.png" alt="Slide 4"></div>
-						<div><img src="src/product6.png" alt="Slide 4"></div>
+					<a id="main-link" href="Product1.html">
+						<img id="main-image" src="src/product1.png" alt="Main Image">
+					</a>
+					<div class="thumbnail-container">
+						<img class="thumbnail" src="src/product1.png" alt="Thumbnail 1"
+							onclick="changeImage('src/product1.png')">
+						<img class="thumbnail" src="src/product2.png" alt="Thumbnail 2"
+							onclick="changeImage('src/product2.png')">
+						<img class="thumbnail" src="src/product3.png" alt="Thumbnail 3"
+							onclick="changeImage('src/product3.png')">
+						<img class="thumbnail" src="src/product4.png" alt="Thumbnail 4"
+							onclick="changeImage('src/product4.png')">
+						<img class="thumbnail" src="src/product5.png" alt="Thumbnail 5"
+							onclick="changeImage('src/product5.png')">
+						<img class="thumbnail" src="src/product6.png" alt="Thumbnail 6"
+							onclick="changeImage('src/product6.png')">
 					</div>
 				</div>
-			<div class="pGrid">
-				<div class="productsGrid">
-					<div class="products">
-						<div class="product">
-							<a href="Product1.html">
-								<img src="src/product1.png" alt="Product 1">
-							</a>
-						</div>
-						<div class="product">
-							<a href="Product2.html">
-								<img src="src/product3.png" alt="Product 2">
-							</a>
-						</div>
-						<div class="product">
-							<a href="Product3.html">
-								<img src="src/product2.png" alt="Product 3">
-							</a>
-						</div>
-						
-						<div class="product">
-							<a href="Product4.html">
-								<img src="src/product4.png" alt="Product 4">
-							</a>
-						</div>
-						<div class="product">
-							<a href="Product5.html">
-								<img src="src/product5.png" alt="Product 4">
-							</a>
-						</div>
-						<div class="product">
-							<a href="Product6.html">
-								<img src="src/product6.png" alt="Product 4">
-							</a>
-						</div>
-					</div>
+	<div class="pGrid">
+		<div class="productsGrid">
+			<div class="products">
+				<div class="product">
+					<a href="Product1.html">
+						<img src="src/product1.png" alt="Product 1">
+					</a>
+				</div>
+				<div class="product">
+					<a href="Product2.html">
+						<img src="src/product3.png" alt="Product 2">
+					</a>
+				</div>
+				<div class="product">
+					<a href="Product3.html">
+						<img src="src/product2.png" alt="Product 3">
+					</a>
+				</div>
+
+				<div class="product">
+					<a href="Product4.html">
+						<img src="src/product4.png" alt="Product 4">
+					</a>
+				</div>
+				<div class="product">
+					<a href="Product5.html">
+						<img src="src/product5.png" alt="Product 4">
+					</a>
+				</div>
+				<div class="product">
+					<a href="Product6.html">
+						<img src="src/product6.png" alt="Product 4">
+					</a>
 				</div>
 			</div>
-			<div class="description">
-				<p> </p>
-			</div>
-		</main>
-		<footer>
-			<p> </p>
-		</footer>
+		</div>
+	</div>
+	<div class="description">
+		<p> </p>
+	</div>
+</div>
+	</main>
+	<footer>
+		<p> </p>
+	</footer>
 	</div>
 </body>
+
 </html>
