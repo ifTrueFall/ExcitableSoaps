@@ -1,43 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Excitable Soaps Products</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-27' y='75' font-family='Courier' font-size='117' fill='%23000'%3E🧼%3C/text%3E%3C/svg%3E" />
-    <link href="src/ExcitableSoaps.css" rel="stylesheet">
-	<meta name="description" content="Our organic Cinnamon Apple Bar, completely sopanified out of plant based fats. Check the procut description for more details!">
+	<title>Candy Apple</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml"
+		href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-27' y='75' font-family='Courier' font-size='117' fill='%23000'%3E🧼%3C/text%3E%3C/svg%3E" />
+	<link href="src/ExcitableSoaps.css" rel="stylesheet">
+	<meta name="description"
+		content="Our organic Candy Apple Bar, completely sopanified out of plant based fats. Check the product description for more details!">
 
 </head>
+
 <body>
 	<div id="wrapper">
-	<header>
-		<div class="logo">
-            <h1><a href="index.html">Excitable Soaps</a></h1>
-        </div>
-		<nav>
-			<ul>
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="FAQ.html">FAQ</a></li> 
-			  <li><a href="AboutUs.html">About Us</a></li>
-			  <li><a href="catalogue.html">Products</a></li>
-			  
-			</ul>
-		 </nav>
-	</header>
-		 <main>
-			<div class="products">
-				<div class="product">
+		<header>
+			<div class="logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="FAQ.html">FAQ</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="catalogue.html">Products</a></li>
+					<li><button id="cart-button"></button>
+					<li>
+						<div id="cart" style="display: none;">
+							<button id="clear-cart">Clear Cart</button>
+						</div>
+					</li>
+
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="productsPage">
+				<div class="productPage">
 					<img src="src/product1.png" alt="Product 1">
+					<div class="product-info">
+						<p class="product-name">Candy Apple</p>
+						<div class="product-purchase">
+							<p class="product-price">$8.00</p>
+							<input type="number" min="1" value="1" class="product-quantity">
+							<button class="add-to-cart" data-product=">Candy Apple" data-quantity="1"
+								data-image="src/Product1.png" data-price="8.00">Add to Cart</button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="description">
-				<p>Text box detailing product information about crafting goes here...</p>
-			</div>
+				<div class="description" style="display: flex; justify-content: space-between;">
+					<div style="flex: 1;">
+						<p><strong>Description:</strong></p>
+						<p>
+							Get ready for a burst of sweetness with our Candy Apple Bar Soap—a delightful concoction
+							that will satisfy your cravings without the guilt. If you're a fan of all things sweet and
+							delicious, this soap is a must-have for your bathing routine.
+
+							Picture this: the irresistible scent of juicy Macintosh apples mingling with a sugary blend
+							of vanilla and candy. It's like taking a bite out of your favorite candy apple, but without
+							the sticky fingers!
+							<br />
+							<br />
+							Crafted with care using nourishing ingredients like olive oil, shea butter, and sweet almond
+							oil, this soap not only cleanses but also moisturizes, leaving your skin feeling soft and
+							hydrated.
+							<br />
+							<br />
+							Whether you're reminiscing about your favorite carnival treat or simply craving a little
+							indulgence, let Candy Apple Bar Soap take you on a journey of pure delight. Treat yourself
+							to a slice of sweetness—you deserve it!
+						</p>
+
+						<p>
+							<strong>Scent:</strong> Apple Bar Soap scented with a sweet blend of vanilla, sugar, candy,
+							juicy Macintosh Apples.
+							<br />
+							<strong>TIP:</strong> Using a vented soap dish will make your bar soaps last longer.
+						</p>
+					</div>
+					<div style="flex: 1;">
+						<p><strong>Materials:</strong>
+						<ol style="list-style-position: inside;">
+							<li>Olive oil</li>
+							<li>Coconut Oil</li>
+							<li>Shea Butter</li>
+							<li>Castor Oil</li>
+							<li>Sweet Almond Oil</li>
+							<li>Sustainable Palm Oil</li>
+							<li>Skin safe Micas and Fragrance oils</li>
+							<li>Sodium Lactacte</li>
+							<li>Moroccan Red Clay</li>
+							<li>Titanium Dioxide</li>
+							<li>Kaolin Clay</li>
+						</ol>
+						<p><strong>size:</strong>Approximately 5.25 OZ.
+							<br />
+							Because our homemade soaps are hand cut, weight may vary
+							<br />
+							Each bar is at least 5.25 OZ.
+						</p>
+					</div>
+				</div>
 		</main>
 		<footer>
-			<p>Footer content here...</p>
-		</div>
+			<div style="display: flex; justify-content: space-between; font-size: 12px;">
+				<div>
+					<h3>Quick Links</h3>
+					<a href="aboutUs.html">About Us</a><br>
+					<a href="FAQ.html">Frequently Asked Questions</a>
+				</div>
+				<div style="text-align: center;">
+					<p>Contact us:
+						<br />
+						Email:<a href="mailto:jp00141@my.westga.edu">jp00141@my.westga.edu</a>
+						<br />
+						Phone: 678-340-6968
+					</p>
+					<p>© 2022 ExcitableSoaps.</p>
+				</div>
+				<div>
+					<h3>Follow Us</h3>
+					<a href="https://www.facebook.com/soexcitablesoaps/">Facebook</a><br>
+					<a href="https://www.etsy.com/shop/soexcitablesoaps/?etsrc=sdt&section_id=42562213">Etsy</a><br>
+				</div>
+			</div>
+
+		</footer>
 	</div>
+	</div>
+	<script src="src/cart.js"></script>
 </body>
+
 </html>
