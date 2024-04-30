@@ -319,9 +319,12 @@ footer {
 }
 
 /* Styles for smaller screens */
-@media (max-width: 767px) {
+@media (max-width: 1097px) {
 	header {
 		display: block;
+	}
+	nav {
+		margin-left: 0;
 	}
 
 	nav ul {
