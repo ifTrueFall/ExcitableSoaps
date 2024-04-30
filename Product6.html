@@ -1,42 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Excitable Soaps Products</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-27' y='75' font-family='Courier' font-size='117' fill='%23000'%3E🧼%3C/text%3E%3C/svg%3E" />
-    <link href="src/ExcitableSoaps.css" rel="stylesheet">
-	<meta name="description" content="Our organic Cinnamon Apple Bar, completely sopanified out of plant based fats. Check the procut description for more details!">
+	<title>Excitable Soaps Products</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml"
+		href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-27' y='75' font-family='Courier' font-size='117' fill='%23000'%3E🧼%3C/text%3E%3C/svg%3E" />
+	<link href="src/ExcitableSoaps.css" rel="stylesheet">
+	<meta name="description"
+		content="Our Relax Shower Steamers, douse with water and breath fresh again. Check the product description for more details!">
 </head>
+
 <body>
 	<div id="wrapper">
-	<header>
-		<div class="logo">
-            <h1><a href="index.html">Excitable Soaps</a></h1>
-        </div>
-		<nav>
-			<ul>
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="FAQ.html">FAQ</a></li> 
-			  <li><a href="AboutUs.html">About Us</a></li>
-			  <li><a href="catalogue.html">Products</a></li>
-			  
-			</ul>
-		 </nav>
-	</header>
-		 <main>
-			<div class="products">
-				<div class="product">
-					<img src="src/product6.png" alt="Product 1">
+		<header>
+			<div class="logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="FAQ.html">FAQ</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="catalogue.html">Products</a></li>
+					<li><button id="cart-button"></button>
+					<li>
+						<div id="cart" style="display: none;">
+							<button id="clear-cart">Clear Cart</button>
+						</div>
+					</li>
+
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="productsPage">
+				<div class="productPage">
+					<img src="src/product6.png" alt="Product 6">
+					<div class="product-info">
+						<p class="product-name">Relax Shower Steamers</p>
+						<div class="product-purchase">
+							<p class="product-price">$16.00</p>
+							<input type="number" min="1" value="1" class="product-quantity">
+							<button class="add-to-cart" data-product="Relax Shower Steamers" data-quantity="1">Add to Cart</button>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="description">
-				<p>Text box detailing product information about crafting goes here...</p>
+			<div class="description" style="display: flex; justify-content: space-between;">
+				<ol style="list-style-position: inside;">
+					<p><strong>Instructions:</strong></p>
+					<li>Begin shower as usual.</li>
+					<li>Open an individually wrapped shower steamer and place on the floor of your shower stall away
+						from the direct stream of water. Do not submerge in puddle of water.</li>
+					<li>Allow the steam and warm water splashes from your shower water to activate the steamer.</li>
+					<li>As the steamer slowly dissolves, enjoy the aromas of the menthol and essential oils.</li>
+					<p>Keep away from children and pets.</p>
+
+					<p>Keep unused shower steamers in resealable bag and away from moisture to preserve scent strength.
+					</p>
+				</ol>
+
+				<p>Relax Shower Steamers with Lavender, Eucalyptus, & Menthol are amazing tablets that you can add to
+					your ordinary shower routine to achieve a very invigorating and refreshing shower spa experience.
+					Heat from the shower and the warm water activate the shower bomb to create fizz and release the
+					aromatic essential oils to create a sense of tranquility. Transform the everyday shower to a more
+					soothing way to start or end the day by using Relax shower melts. 
+					<br/><br/>
+					This listing is for a resealable bag containing four (4) shower steamers that weigh over 2 oz each.
+					That's a total of over 8 oz in a resealable bag.
+					<br/><br/>
+					Each shower steamer is individually shrink-wrapped to preserve the scent for each steamer. This
+					should maintain the scent strength.
+					<br/><br/>
+					<strong>Ingredients:</strong> Baking soda, citric acid, white kaolin clay, corn startch, menthol crystals, eucalyptus essential oil, lavender essential oil, skin safe mica minerals for coloring, Polysorbate 80
+					<br/><br/>
+					Scent: Lavender Essential Oil, Eucalyptus Essential Oil, and Menthol Crystals.
+				</p>
+
+				<p><strong>SHOWER USE ONLY. DO NOT USE FOR SOAKING IN THE BATH. <br />
+						THIS IS NOT A BATH BOMB!</strong> <br />
+					The strong menthol and essential oils could be harmful if used directly on the skin.</p>
 			</div>
 		</main>
 		<footer>
-			<p>Footer content here...</p>
-		</div>
+			<div style="display: flex; justify-content: space-between; font-size: 12px;">
+				<div>
+					<h3>Quick Links</h3>
+					<a href="aboutUs.html">About Us</a><br>
+					<a href="FAQ.html">Frequently Asked Questions</a>
+				</div>
+				<div style="text-align: center;">
+					<p>Contact us: 
+						<br/>
+						Email:<a href="mailto:jp00141@my.westga.edu">jp00141@my.westga.edu</a>
+						<br/>
+						Phone: 678-340-6968
+					</p>
+					<p>© 2022 ExcitableSoaps.</p>
+				</div>
+				<div>
+					<h3>Follow Us</h3>
+					<a href="https://www.facebook.com/soexcitablesoaps/">Facebook</a><br>
+					<a href="https://www.etsy.com/shop/soexcitablesoaps/?etsrc=sdt&section_id=42562213">Etsy</a><br>
+				</div>
+			</div>
+
+		</footer>
 	</div>
+	</div>
+	<script src="src/cart.js"></script>
 </body>
+
 </html>
