@@ -120,6 +120,11 @@ header a:hover     { color: white; }
     align-items: center;
 }
 
+.productPage img {
+	width: 300px;
+	height: 300px;
+}
+
 .product-info {
     margin-left: 20px;
 }
@@ -295,3 +300,38 @@ footer {
 }
 #mobile { display: inline; }
 #desktop { display: none; }
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav ul {
+		display: flex;
+		list-style-type: none;
+	}
+
+	nav ul li {
+		margin-right: 20px;
+	}
+}
+
+/* Styles for smaller screens */
+@media (max-width: 767px) {
+	header {
+		display: block;
+	}
+
+	nav ul {
+		background-color: #fce9f4;
+		list-style-type: none;
+		min-width: 100%;
+		padding-left: 20px;	
+	}
+
+	nav ul li {
+		margin-bottom: 10px;
+	}
+}
