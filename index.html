@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+		function changeImage(src) {
+			document.getElementById('main-image').src = src;
+			var productNumber = src.split('product')[1].split('.')[0];
+			document.getElementById('main-link').href = "Product" + productNumber + ".html";
+		}
+	
+		function handleClick(event) {
+			const buttons = document.querySelectorAll('button');
+			buttons.forEach(button => {
+				button.classList.remove('active');
+			});
+			event.target.classList.add('active');
+		}
+	</script>
+    <title>Excitable Soaps Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-27' y='75' font-family='Courier' font-size='117' fill='%23000'%3E🧼%3C/text%3E%3C/svg%3E" />
+    <link href="src/ExcitableSoaps.css" rel="stylesheet">
+	<meta name="description" content="ExcitableSoaps home page. We are all about healthy options for affordability. Check out our catalogue, or if you are still unsure, check out the About Us page, and learn why you should get your excited soap!">
+</head>
+<body>
+	<div id="wrapper">
+	<header>
+		<div class="logo">
+        </div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="FAQ.html">FAQ</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="catalogue.html">Products</a></li>
+				<li><button id="cart-button"></button>
+					<div id="cart" style="display: none;">
+						<button id="clear-cart">Clear Cart</button>
+				</li>
+			</ul>
+		 </nav>
+	</header>
+		 <main>
+			<h2>Welcome to So Excitable Soaps!</h1>
+			<div class="slideshow-container">
+				<a id="main-link" href="Product1.html">
+					<img id="main-image" src="src/product1.png" alt="Main Image">
+				</a>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="src/product1.png" alt="Thumbnail 1"
+						onclick="changeImage('src/product1.png')">
+					<img class="thumbnail" src="src/product2.png" alt="Thumbnail 2"
+						onclick="changeImage('src/product2.png')">
+					<img class="thumbnail" src="src/product3.png" alt="Thumbnail 3"
+						onclick="changeImage('src/product3.png')">
+					<img class="thumbnail" src="src/product4.png" alt="Thumbnail 4"
+						onclick="changeImage('src/product4.png')">
+					<img class="thumbnail" src="src/product5.png" alt="Thumbnail 5"
+						onclick="changeImage('src/product5.png')">
+					<img class="thumbnail" src="src/product6.png" alt="Thumbnail 6"
+						onclick="changeImage('src/product6.png')">
+				</div>
+			</div>
+			<div class="description">
+				<p>Indulge in the chemistry of bathing with our collection of handcrafted soaps. Each bar is meticulously crafted with love and care, using only the finest natural ingredients to nourish and pamper your skin.</p>
+				<p>From the refreshing scent of ocean mist to the sweet allure of candy apple, our soaps are designed to elevate your bathing experience to new heights.</p>
+				<p>Explore our selection and discover your perfect match. Whether you're seeking a burst of citrusy freshness or a decadent treat for your senses, we have something for everyone.</p>
+				<p>Experience the luxury of handmade soap and treat yourself to a moment of indulgence. Shop now and transform your daily routine into a spa-like retreat!</p>
+			</div>
+		</main>
+		<footer>
+			<div style="display: flex; justify-content: space-between; font-size: 12px;">
+				<div>
+					<h3>Quick Links</h3>
+					<a href="aboutUs.html">About Us</a><br>
+					<a href="FAQ.html">Frequently Asked Questions</a>
+				</div>
+				<div style="text-align: center;">
+					<p>Contact us: 
+						<br/>
+						Email:<a href="mailto:jp00141@my.westga.edu">jp00141@my.westga.edu</a>
+						<br/>
+						Phone: 678-340-6968
+					</p>
+					<p>© 2022 ExcitableSoaps.</p>
+				</div>
+				<div>
+					<h3>Follow Us</h3>
+					<a href="https://www.facebook.com/soexcitablesoaps/">Facebook</a><br>
+					<a href="https://www.etsy.com/shop/soexcitablesoaps/?etsrc=sdt&section_id=42562213">Etsy</a><br>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+	<script src="src/cart.js"></script>
+</body>
+</html>
