@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ExcitableSoaps/CopilotIndices/0.2.1657.32929
+/.vs/ExcitableSoaps/CopilotIndices/0.2.1657.32929/CodeChunks.db
+/.vs/ExcitableSoaps/CopilotIndices/0.2.1657.32929/CodeChunks.db-shm
+/.vs/ExcitableSoaps/CopilotIndices/0.2.1657.32929/CodeChunks.db-wal
+/.vs/ExcitableSoaps/CopilotIndices/0.2.1657.32929/SemanticSymbols.db
+/.vs/ExcitableSoaps/CopilotIndices/0.2.1657.32929/SemanticSymbols.db-shm
+/.vs/ExcitableSoaps/CopilotIndices/0.2.1657.32929/SemanticSymbols.db-wal
