@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<script>
-		function changeImage(src) {
-			document.getElementById('main-image').src = src;
-			var productNumber = src.split('product')[1].split('.')[0];
+		function changeImage(thumbnail) {
+			document.getElementById('main-image').src = thumbnail.src;
+			var productNumber = thumbnail.dataset.productNumber;
 			document.getElementById('main-link').href = "Product" + productNumber + ".html";
-		}
+}
 	
 		function handleClick(event) {
 			const buttons = document.querySelectorAll('button');
@@ -35,9 +35,8 @@
 				<li><a href="contactUs.html">Contact Us</a></li>
 				<li><a href="AboutUs.html">About Us</a></li>
 				<li><a href="catalogue.html">Products</a></li>
-				<li><button id="cart-button"></button>
-					<div id="cart" style="display: none;">
-						<button id="clear-cart">Clear Cart</button>
+					
+						
 				</li>
 			</ul>
 		 </nav>
@@ -46,21 +45,15 @@
 			<h2>Welcome to So Excitable Soaps!</h1>
 			<div class="slideshow-container">
 				<a id="main-link" href="Product1.html">
-					<img id="main-image" src="src/product1.png" alt="Main Image">
+					<img id="main-image" src="src/pictures/products/product1.png" alt="Main Image">
 				</a>
 				<div class="thumbnail-container">
-					<img class="thumbnail" src="src/product1.png" alt="Thumbnail 1"
-						onclick="changeImage('src/product1.png')">
-					<img class="thumbnail" src="src/product2.png" alt="Thumbnail 2"
-						onclick="changeImage('src/product2.png')">
-					<img class="thumbnail" src="src/product3.png" alt="Thumbnail 3"
-						onclick="changeImage('src/product3.png')">
-					<img class="thumbnail" src="src/product4.png" alt="Thumbnail 4"
-						onclick="changeImage('src/product4.png')">
-					<img class="thumbnail" src="src/product5.png" alt="Thumbnail 5"
-						onclick="changeImage('src/product5.png')">
-					<img class="thumbnail" src="src/product6.png" alt="Thumbnail 6"
-						onclick="changeImage('src/product6.png')">
+					<img class="thumbnail" src="src/pictures/products/product1.png" alt="Thumbnail 1" data-product-number="1" onclick="changeImage(this)">
+					<img class="thumbnail" src="src/pictures/products/product2.png" alt="Thumbnail 2" data-product-number="2" onclick="changeImage(this)">
+					<img class="thumbnail" src="src/pictures/products/product3.png" alt="Thumbnail 3" data-product-number="3" onclick="changeImage(this)">
+					<img class="thumbnail" src="src/pictures/products/product4.png" alt="Thumbnail 4" data-product-number="4" onclick="changeImage(this)">
+					<img class="thumbnail" src="src/pictures/products/product5.png" alt="Thumbnail 5" data-product-number="5" onclick="changeImage(this)">
+					<img class="thumbnail" src="src/pictures/products/product6.png" alt="Thumbnail 6" data-product-number="6" onclick="changeImage(this)">
 				</div>
 			</div>
 			<div class="description">
@@ -80,21 +73,22 @@
 				<div style="text-align: center;">
 					<p>Contact us: 
 						<br/>
-						Email:<a href="mailto:jp00141@my.westga.edu">jp00141@my.westga.edu</a>
+						Email:<a href="mailto:jawn.priest100@gmail.com">jawn.priest100@gmail.com</a>
 						<br/>
 						Phone: 678-340-6968
 					</p>
-					<p>© 2022 ExcitableSoaps.</p>
+					
 				</div>
 				<div>
 					<h3>Follow Us</h3>
 					<a href="https://www.facebook.com/soexcitablesoaps/">Facebook</a><br>
-					<a href="https://www.etsy.com/shop/soexcitablesoaps/?etsrc=sdt&section_id=42562213">Etsy</a><br>
+					<a href="https://www.etsy.com/shop/SoExcitableSoaps">Etsy</a><br> 
+					<a href="https://www.instagram.com/soexcitablesoaps/"Instagram</a><br>
 				</div>
 			</div>
 
 		</footer>
 	</div>
-	<script src="src/cart.js"></script>
+	
 </body>
 </html>
