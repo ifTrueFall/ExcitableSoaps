@@ -250,12 +250,15 @@ footer {
     text-align: center;
 }
 
+.product-name {
+	font-weight: bold;
+}
 .pName {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    color: #fff;
-    font-size: 15px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	color: #fff;
+	font-size: 15px;
 	display: inline-block;
 	background-color: #d5c97a;
 	white-space: nowrap;

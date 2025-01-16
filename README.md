@@ -1,2 +1,2 @@
-ExcitableSoaps project <br/>
-  Experiemental project in creating 7 pages to simulate a website for the ExcitableSoaps applying gitHub's repositories.
+Excitable Soaps project <br/>
+  Project for creating pages to simulate a website for the Excitable Soaps and applying gitHub's repositories.
